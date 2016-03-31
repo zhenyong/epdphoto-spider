@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>e拍得图片下载</title>
+    <style>
+    #code {
+        width: 300px;
+        font-size: 16px;
+        /*margin-left: 1em;*/
+    }
+    #num {
+        width: 100px;
+        font-size: 16px;
+    }
+    #saveDirectory {
+        width: 250px;
+        margin-right: 1em;
+    }
+    .input-wrap {
+        display: inline-block;
+    }
+    .hidden {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+<label>存储目录：</label><input readonly="" id="saveDirectory" type="text">
+<button id="browser">浏览</button>
+<button id="auto">自动生成</button>
+
+<br>
+<br>
+从编号： <input value="AG4802" type="text" name＝"code" id="code" placeholder="输入编号（如“AG4999”，大小写随意） ">开始
+<br/>
+下载连续的
+<input value="214" type="number" name＝"num" id="num" placeholder="数量" value="1">张
+<br>
+<br>
+<button id="download">下载</button>
+
+<script src="js/ExecQueue.js"></script>
+<script src="js/spider.js"></script>
+<script src="js/index.js"></script>
+<script>
+    
+</script>
+</body>
+</html>
